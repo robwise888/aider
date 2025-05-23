@@ -58,6 +58,10 @@ memory_db/
 *.sqlite
 *.sqlite3
 
+# Tree-sitter language packs
+aider/queries/tree-sitter-language-pack/
+aider/queries/tree-sitter-languages/
+
 # Test files and directories
 test_*/
 tests/
@@ -69,12 +73,19 @@ test_enhanced_repomap/
 test_knowledge/
 test_repo_map/
 test_retrieval/
+*_demo.py
+demo_*.py
+*_investigation.md
+*_exploration.py
 
 # Log files
 logs/
 *.log
 *.stderr.log
 *.stdout.log
+selfy*.log
+selfy_errors.log
+selfy_structured.json
 
 # Temporary files
 *.tmp
@@ -102,6 +113,7 @@ benchmark/results/
 
 # Docker files
 docker-compose.override.yml
+Dockerfile*
 
 # Shell scripts (often used for local development)
 *.sh
@@ -113,6 +125,8 @@ config.local.json
 config.local.yaml
 *.local.yml
 *.local.yaml
+aider_config*.yml
+aider_settings_example.yml
 
 # Jupyter Notebooks
 .ipynb_checkpoints
@@ -131,3 +145,36 @@ coverage.xml
 *~
 *.bak
 *.backup
+
+# Debug and development files
+*_debug.py
+*_debug.txt
+*_debug_*.py
+*_debug_*.txt
+debug_*.py
+debug_*.txt
+*context_debug*
+*context_log*
+*_stderr.log
+*_stdout.log
+*_test.txt
+
+# Archive files
+archive/
+*archive*/
+
+# Website build files
+website/_site/
+website/node_modules/
+website/.sass-cache/
+
+# Selfy integration files
+selfy/
+selfy_*/
+*selfy_*
+Memory_testing.md
+aider_launch.md
+aider_self_code_base.md
+launch.txt
+config_*.md
+*_mods.md
