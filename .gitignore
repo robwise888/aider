@@ -1,0 +1,129 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+agent_env/
+agent_env_py312/
+agent_env_py313/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Logs
+logs/
+*.log
+*.stderr.log
+*.stdout.log
+
+# Memory database
+memory_db/
+*.db
+*.sqlite
+*.sqlite3
+.test.vector.db/
+.aider.vector.db/
+
+# Model cache
+data/model_cache/
+
+# Environment variables
+.env
+
+# Configuration overrides
+config.local.json
+config.local.yaml
+
+# Temporary files
+*.tmp
+*.bak
+temp/
+.temp/
+
+# Archive files
+selfy_core/archive/
+archive/
+gitcopy/
+
+# Test cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*.ipynb
+
+# Test files
+test_*.py
+*_test.txt
+test_*/
+
+# Specific to Selfy
+.recreate_db
+.aider*
+
+# Temporary scripts
+run_aider_with_logging.py
+aider_logger.py
+
+# Local modules
+local_modules/
+
+# GPU logs and monitoring
+*gpu*.log
+*gpu*.csv
+
+# Backup and archive files
+*backup*
+*archive*
+
+# Utility scripts
+fix_*.py
+fix_*.bat
+install_*.bat
+install_*.py
+patch_*.py
+patch_*.bat
+run_*.bat
+run_*.py
+restart_*.bat
+configure_*.bat
+configure_*.ps1
+clear_*.ps1
+clear_*.py
+update_*.ps1
+update_*.py
+set_*.ps1
+setup_*.py
+verify_*.py
+check_*.py
+monitor_*.py
+seed_*.py

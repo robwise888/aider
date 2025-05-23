@@ -1,0 +1,1724 @@
+{
+  "capabilities": [
+    {
+      "name": "statistics_correlation",
+      "type": "library",
+      "description": "Pearson's correlation coefficient",
+      "source": "statistics",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "any",
+          "description": "Parameter x",
+          "required": true
+        },
+        {
+          "name": "y",
+          "type": "any",
+          "description": "Parameter y",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "any",
+        "description": "Return value"
+      },
+      "version": "1.0.0",
+      "author": "Library Scanner",
+      "enabled": true,
+      "keywords": [
+        "correlation",
+        "statistics",
+        "pearson",
+        "coefficient"
+      ]
+    },
+    {
+      "name": "statistics_covariance",
+      "type": "library",
+      "description": "Covariance",
+      "source": "statistics",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "any",
+          "description": "Parameter x",
+          "required": true
+        },
+        {
+          "name": "y",
+          "type": "any",
+          "description": "Parameter y",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "any",
+        "description": "Return value"
+      },
+      "version": "1.0.0",
+      "author": "Library Scanner",
+      "enabled": true,
+      "keywords": [
+        "covariance",
+        "statistics"
+      ]
+    },
+    {
+      "name": "statistics_fmean",
+      "type": "library",
+      "description": "Convert data to floats and compute the arithmetic mean.",
+      "source": "statistics",
+      "parameters": [
+        {
+          "name": "data",
+          "type": "any",
+          "description": "Parameter data",
+          "required": true
+        },
+        {
+          "name": "weights",
+          "type": "any",
+          "description": "Parameter weights",
+          "required": false
+        }
+      ],
+      "returns": {
+        "type": "any",
+        "description": "Return value"
+      },
+      "version": "1.0.0",
+      "author": "Library Scanner",
+      "enabled": true,
+      "keywords": [
+        "fmean",
+        "statistics",
+        "convert",
+        "data",
+        "floats",
+        "compute",
+        "arithmetic",
+        "mean"
+      ]
+    },
+    {
+      "name": "statistics_geometric_mean",
+      "type": "library",
+      "description": "Convert data to floats and compute the geometric mean.",
+      "source": "statistics",
+      "parameters": [
+        {
+          "name": "data",
+          "type": "any",
+          "description": "Parameter data",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "any",
+        "description": "Return value"
+      },
+      "version": "1.0.0",
+      "author": "Library Scanner",
+      "enabled": true,
+      "keywords": [
+        "geometric_mean",
+        "statistics",
+        "convert",
+        "data",
+        "floats",
+        "compute",
+        "geometric",
+        "mean"
+      ]
+    },
+    {
+      "name": "statistics_harmonic_mean",
+      "type": "library",
+      "description": "Return the harmonic mean of data.",
+      "source": "statistics",
+      "parameters": [
+        {
+          "name": "data",
+          "type": "any",
+          "description": "Parameter data",
+          "required": true
+        },
+        {
+          "name": "weights",
+          "type": "any",
+          "description": "Parameter weights",
+          "required": false
+        }
+      ],
+      "returns": {
+        "type": "any",
+        "description": "Return value"
+      },
+      "version": "1.0.0",
+      "author": "Library Scanner",
+      "enabled": true,
+      "keywords": [
+        "harmonic_mean",
+        "statistics",
+        "return",
+        "harmonic",
+        "mean",
+        "data"
+      ]
+    },
+    {
+      "name": "statistics_linear_regression",
+      "type": "library",
+      "description": "Slope and intercept for simple linear regression.",
+      "source": "statistics",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "any",
+          "description": "Parameter x",
+          "required": true
+        },
+        {
+          "name": "y",
+          "type": "any",
+          "description": "Parameter y",
+          "required": true
+        },
+        {
+          "name": "proportional",
+          "type": "any",
+          "description": "Parameter proportional",
+          "required": false,
+          "default": "False"
+        }
+      ],
+      "returns": {
+        "type": "any",
+        "description": "Return value"
+      },
+      "version": "1.0.0",
+      "author": "Library Scanner",
+      "enabled": true,
+      "keywords": [
+        "linear_regression",
+        "statistics",
+        "slope",
+        "intercept",
+        "simple",
+        "linear",
+        "regression"
+      ]
+    },
+    {
+      "name": "statistics_mean",
+      "type": "library",
+      "description": "Return the sample arithmetic mean of data.",
+      "source": "statistics",
+      "parameters": [
+        {
+          "name": "data",
+          "type": "any",
+          "description": "Parameter data",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "any",
+        "description": "Return value"
+      },
+      "version": "1.0.0",
+      "author": "Library Scanner",
+      "enabled": true,
+      "keywords": [
+        "mean",
+        "statistics",
+        "return",
+        "sample",
+        "arithmetic",
+        "data"
+      ]
+    },
+    {
+      "name": "statistics_median",
+      "type": "library",
+      "description": "Return the median (middle value) of numeric data.",
+      "source": "statistics",
+      "parameters": [
+        {
+          "name": "data",
+          "type": "any",
+          "description": "Parameter data",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "any",
+        "description": "Return value"
+      },
+      "version": "1.0.0",
+      "author": "Library Scanner",
+      "enabled": true,
+      "keywords": [
+        "median",
+        "statistics",
+        "return",
+        "middle",
+        "value",
+        "numeric",
+        "data"
+      ]
+    },
+    {
+      "name": "statistics_median_grouped",
+      "type": "library",
+      "description": "Estimates the median for numeric data binned around the midpoints\nof consecutive, fixed-width intervals.",
+      "source": "statistics",
+      "parameters": [
+        {
+          "name": "data",
+          "type": "any",
+          "description": "Parameter data",
+          "required": true
+        },
+        {
+          "name": "interval",
+          "type": "any",
+          "description": "Parameter interval",
+          "required": false,
+          "default": "1.0"
+        }
+      ],
+      "returns": {
+        "type": "any",
+        "description": "Return value"
+      },
+      "version": "1.0.0",
+      "author": "Library Scanner",
+      "enabled": true,
+      "keywords": [
+        "median_grouped",
+        "statistics",
+        "estimates",
+        "median",
+        "numeric",
+        "data",
+        "binned",
+        "around",
+        "midpoints",
+        "consecutive"
+      ]
+    },
+    {
+      "name": "statistics_median_high",
+      "type": "library",
+      "description": "Return the high median of data.",
+      "source": "statistics",
+      "parameters": [
+        {
+          "name": "data",
+          "type": "any",
+          "description": "Parameter data",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "any",
+        "description": "Return value"
+      },
+      "version": "1.0.0",
+      "author": "Library Scanner",
+      "enabled": true,
+      "keywords": [
+        "median_high",
+        "statistics",
+        "return",
+        "high",
+        "median",
+        "data"
+      ]
+    },
+    {
+      "name": "statistics_median_low",
+      "type": "library",
+      "description": "Return the low median of numeric data.",
+      "source": "statistics",
+      "parameters": [
+        {
+          "name": "data",
+          "type": "any",
+          "description": "Parameter data",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "any",
+        "description": "Return value"
+      },
+      "version": "1.0.0",
+      "author": "Library Scanner",
+      "enabled": true,
+      "keywords": [
+        "median_low",
+        "statistics",
+        "return",
+        "median",
+        "numeric",
+        "data"
+      ]
+    },
+    {
+      "name": "statistics_mode",
+      "type": "library",
+      "description": "Return the most common data point from discrete or nominal data.",
+      "source": "statistics",
+      "parameters": [
+        {
+          "name": "data",
+          "type": "any",
+          "description": "Parameter data",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "any",
+        "description": "Return value"
+      },
+      "version": "1.0.0",
+      "author": "Library Scanner",
+      "enabled": true,
+      "keywords": [
+        "mode",
+        "statistics",
+        "return",
+        "most",
+        "common",
+        "data",
+        "point",
+        "from",
+        "discrete",
+        "nominal"
+      ]
+    },
+    {
+      "name": "statistics_multimode",
+      "type": "library",
+      "description": "Return a list of the most frequently occurring values.",
+      "source": "statistics",
+      "parameters": [
+        {
+          "name": "data",
+          "type": "any",
+          "description": "Parameter data",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "any",
+        "description": "Return value"
+      },
+      "version": "1.0.0",
+      "author": "Library Scanner",
+      "enabled": true,
+      "keywords": [
+        "multimode",
+        "statistics",
+        "return",
+        "list",
+        "most",
+        "frequently",
+        "occurring",
+        "values"
+      ]
+    },
+    {
+      "name": "statistics_namedtuple",
+      "type": "library",
+      "description": "Returns a new subclass of tuple with named fields.",
+      "source": "statistics",
+      "parameters": [
+        {
+          "name": "typename",
+          "type": "any",
+          "description": "Parameter typename",
+          "required": true
+        },
+        {
+          "name": "field_names",
+          "type": "any",
+          "description": "Parameter field_names",
+          "required": true
+        },
+        {
+          "name": "rename",
+          "type": "any",
+          "description": "Parameter rename",
+          "required": false,
+          "default": "False"
+        },
+        {
+          "name": "defaults",
+          "type": "any",
+          "description": "Parameter defaults",
+          "required": false
+        },
+        {
+          "name": "module",
+          "type": "any",
+          "description": "Parameter module",
+          "required": false
+        }
+      ],
+      "returns": {
+        "type": "any",
+        "description": "Return value"
+      },
+      "version": "1.0.0",
+      "author": "Library Scanner",
+      "enabled": true,
+      "keywords": [
+        "namedtuple",
+        "statistics",
+        "returns",
+        "subclass",
+        "tuple",
+        "with",
+        "named",
+        "fields"
+      ]
+    },
+    {
+      "name": "statistics_pstdev",
+      "type": "library",
+      "description": "Return the square root of the population variance.",
+      "source": "statistics",
+      "parameters": [
+        {
+          "name": "data",
+          "type": "any",
+          "description": "Parameter data",
+          "required": true
+        },
+        {
+          "name": "mu",
+          "type": "any",
+          "description": "Parameter mu",
+          "required": false
+        }
+      ],
+      "returns": {
+        "type": "any",
+        "description": "Return value"
+      },
+      "version": "1.0.0",
+      "author": "Library Scanner",
+      "enabled": true,
+      "keywords": [
+        "pstdev",
+        "statistics",
+        "return",
+        "square",
+        "root",
+        "population",
+        "variance"
+      ]
+    },
+    {
+      "name": "statistics_pvariance",
+      "type": "library",
+      "description": "Return the population variance of ``data``.",
+      "source": "statistics",
+      "parameters": [
+        {
+          "name": "data",
+          "type": "any",
+          "description": "Parameter data",
+          "required": true
+        },
+        {
+          "name": "mu",
+          "type": "any",
+          "description": "Parameter mu",
+          "required": false
+        }
+      ],
+      "returns": {
+        "type": "any",
+        "description": "Return value"
+      },
+      "version": "1.0.0",
+      "author": "Library Scanner",
+      "enabled": true,
+      "keywords": [
+        "pvariance",
+        "statistics",
+        "return",
+        "population",
+        "variance",
+        "data"
+      ]
+    },
+    {
+      "name": "statistics_quantiles",
+      "type": "library",
+      "description": "Divide *data* into *n* continuous intervals with equal probability.",
+      "source": "statistics",
+      "parameters": [
+        {
+          "name": "data",
+          "type": "any",
+          "description": "Parameter data",
+          "required": true
+        },
+        {
+          "name": "n",
+          "type": "any",
+          "description": "Parameter n",
+          "required": false,
+          "default": "4"
+        },
+        {
+          "name": "method",
+          "type": "any",
+          "description": "Parameter method",
+          "required": false,
+          "default": "exclusive"
+        }
+      ],
+      "returns": {
+        "type": "any",
+        "description": "Return value"
+      },
+      "version": "1.0.0",
+      "author": "Library Scanner",
+      "enabled": true,
+      "keywords": [
+        "quantiles",
+        "statistics",
+        "divide",
+        "data",
+        "into",
+        "continuous",
+        "intervals",
+        "with",
+        "equal",
+        "probability"
+      ]
+    },
+    {
+      "name": "statistics_stdev",
+      "type": "library",
+      "description": "Return the square root of the sample variance.",
+      "source": "statistics",
+      "parameters": [
+        {
+          "name": "data",
+          "type": "any",
+          "description": "Parameter data",
+          "required": true
+        },
+        {
+          "name": "xbar",
+          "type": "any",
+          "description": "Parameter xbar",
+          "required": false
+        }
+      ],
+      "returns": {
+        "type": "any",
+        "description": "Return value"
+      },
+      "version": "1.0.0",
+      "author": "Library Scanner",
+      "enabled": true,
+      "keywords": [
+        "stdev",
+        "statistics",
+        "return",
+        "square",
+        "root",
+        "sample",
+        "variance"
+      ]
+    },
+    {
+      "name": "statistics_variance",
+      "type": "library",
+      "description": "Return the sample variance of data.",
+      "source": "statistics",
+      "parameters": [
+        {
+          "name": "data",
+          "type": "any",
+          "description": "Parameter data",
+          "required": true
+        },
+        {
+          "name": "xbar",
+          "type": "any",
+          "description": "Parameter xbar",
+          "required": false
+        }
+      ],
+      "returns": {
+        "type": "any",
+        "description": "Return value"
+      },
+      "version": "1.0.0",
+      "author": "Library Scanner",
+      "enabled": true,
+      "keywords": [
+        "variance",
+        "statistics",
+        "return",
+        "sample",
+        "data"
+      ]
+    },
+    {
+      "name": "math_acos",
+      "type": "library",
+      "description": "Return the arc cosine (measured in radians) of x.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_acosh",
+      "type": "library",
+      "description": "Return the inverse hyperbolic cosine of x.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_asin",
+      "type": "library",
+      "description": "Return the arc sine (measured in radians) of x.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_asinh",
+      "type": "library",
+      "description": "Return the inverse hyperbolic sine of x.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_atan",
+      "type": "library",
+      "description": "Return the arc tangent (measured in radians) of x.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_atan2",
+      "type": "library",
+      "description": "Return the arc tangent (measured in radians) of y/x.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_atanh",
+      "type": "library",
+      "description": "Return the inverse hyperbolic tangent of x.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_cbrt",
+      "type": "library",
+      "description": "Return the cube root of x.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_ceil",
+      "type": "library",
+      "description": "Return the ceiling of x as an Integral.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_comb",
+      "type": "library",
+      "description": "Number of ways to choose k items from n items without repetition and without order.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_copysign",
+      "type": "library",
+      "description": "Return a float with the magnitude (absolute value) of x but the sign of y.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_cos",
+      "type": "library",
+      "description": "Return the cosine of x (measured in radians).",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_cosh",
+      "type": "library",
+      "description": "Return the hyperbolic cosine of x.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_degrees",
+      "type": "library",
+      "description": "Convert angle x from radians to degrees.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_dist",
+      "type": "library",
+      "description": "Return the Euclidean distance between two points p and q.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_erf",
+      "type": "library",
+      "description": "Error function at x.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_erfc",
+      "type": "library",
+      "description": "Complementary error function at x.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_exp",
+      "type": "library",
+      "description": "Return e raised to the power of x.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_exp2",
+      "type": "library",
+      "description": "Return 2 raised to the power of x.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_expm1",
+      "type": "library",
+      "description": "Return exp(x)-1.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_fabs",
+      "type": "library",
+      "description": "Return the absolute value of the float x.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_factorial",
+      "type": "library",
+      "description": "Find n!.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_floor",
+      "type": "library",
+      "description": "Return the floor of x as an Integral.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_fmod",
+      "type": "library",
+      "description": "Return fmod(x, y), according to platform C.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_frexp",
+      "type": "library",
+      "description": "Return the mantissa and exponent of x, as pair (m, e).",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_fsum",
+      "type": "library",
+      "description": "Return an accurate floating point sum of values in the iterable seq.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_gamma",
+      "type": "library",
+      "description": "Gamma function at x.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_gcd",
+      "type": "library",
+      "description": "Greatest Common Divisor.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_hypot",
+      "type": "library",
+      "description": "hypot(*coordinates) -> value",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_isclose",
+      "type": "library",
+      "description": "Determine whether two floating point numbers are close in value.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_isfinite",
+      "type": "library",
+      "description": "Return True if x is neither an infinity nor a NaN, and False otherwise.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_isinf",
+      "type": "library",
+      "description": "Return True if x is a positive or negative infinity, and False otherwise.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_isnan",
+      "type": "library",
+      "description": "Return True if x is a NaN (not a number), and False otherwise.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_isqrt",
+      "type": "library",
+      "description": "Return the integer part of the square root of the input.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_lcm",
+      "type": "library",
+      "description": "Least Common Multiple.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_ldexp",
+      "type": "library",
+      "description": "Return x * (2**i).",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_lgamma",
+      "type": "library",
+      "description": "Natural logarithm of absolute value of Gamma function at x.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_log",
+      "type": "library",
+      "description": "log(x, [base=math.e])",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_log10",
+      "type": "library",
+      "description": "Return the base 10 logarithm of x.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_log1p",
+      "type": "library",
+      "description": "Return the natural logarithm of 1+x (base e).",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_log2",
+      "type": "library",
+      "description": "Return the base 2 logarithm of x.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_modf",
+      "type": "library",
+      "description": "Return the fractional and integer parts of x.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_nextafter",
+      "type": "library",
+      "description": "Return the next floating-point value after x towards y.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_perm",
+      "type": "library",
+      "description": "Number of ways to choose k items from n items without repetition and with order.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_pow",
+      "type": "library",
+      "description": "Return x**y (x to the power of y).",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_prod",
+      "type": "library",
+      "description": "Calculate the product of all the elements in the input iterable.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_radians",
+      "type": "library",
+      "description": "Convert angle x from degrees to radians.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_remainder",
+      "type": "library",
+      "description": "Difference between x and the closest integer multiple of y.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_sin",
+      "type": "library",
+      "description": "Return the sine of x (measured in radians).",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_sinh",
+      "type": "library",
+      "description": "Return the hyperbolic sine of x.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_sqrt",
+      "type": "library",
+      "description": "Return the square root of x.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_tan",
+      "type": "library",
+      "description": "Return the tangent of x (measured in radians).",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_tanh",
+      "type": "library",
+      "description": "Return the hyperbolic tangent of x.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_trunc",
+      "type": "library",
+      "description": "Truncates the Real x to the nearest Integral toward 0.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    },
+    {
+      "name": "math_ulp",
+      "type": "library",
+      "description": "Return the value of the least significant bit of the float x.",
+      "source": "math",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "number",
+          "description": "Input value",
+          "required": true
+        }
+      ],
+      "returns": {
+        "type": "number",
+        "description": "Result"
+      },
+      "category": "library"
+    }
+  ]
+}

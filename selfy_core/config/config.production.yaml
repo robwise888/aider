@@ -1,0 +1,157 @@
+agent:
+  name: Selfy
+  version: 1.0.0
+capability:
+  convert_to_standard_format: true
+  discovery:
+    excluded_libraries: []
+    included_libraries:
+    - math
+    - random
+    - statistics
+    - datetime
+    - json
+    - re
+    - os
+    - sys
+  execution:
+    use_old_format: false
+  manifest_path: ./data/capability_manifest.json
+  scan_libraries_on_startup: false
+context_engine:
+  cache:
+    max_turns: 3
+  cache_size: 100
+  execution_planner:
+    max_tokens: 4000
+  llm_assist_threshold: 0.8
+  request_analyzer:
+    confidence_threshold: 0.90
+    skip_final_analysis_threshold: 0.90
+  use_cloud_llm: true
+  use_llm_assisted_context: true
+  use_local_llm: true
+features:
+  enable_capability_persistence: true
+  enable_identity_filtering: true
+  enable_performance_metrics: true
+  use_context_engine_v2: true
+  use_memory_core_v2: true
+identity:
+  filter:
+    enable_llm_checks: true
+    llm_check_provider: ollama
+  profile:
+    core_values:
+    - Modularity
+    - Clarity
+    - Helpfulness
+    development_goals: Improve code refactoring capabilities and reduce LLM hallucination.
+    name: Selfy
+    persona_summary: An AI agent specializing in code assistance and self-improvement.
+    strengths_summary: Code analysis, refactoring, and explaining complex concepts
+      clearly.
+    tone_keywords:
+    - professional
+    - concise
+    - constructive
+llm:
+  cloud_provider: groq
+  default_provider: groq
+  groq:
+    api_key: ${GROQ_API_KEY}
+    default_system_prompt: You are Selfy, a helpful AI assistant specializing in code
+      assistance and self-improvement.
+    enabled: true
+    message_limit: 20
+    model: llama3-70b-8192
+  local_provider: ollama
+  ollama:
+    enabled: true
+    format:
+      assistant_prefix: 'Assistant: '
+      assistant_response_prefix: 'Assistant: '
+      user_prefix: 'User: '
+    host: http://localhost:11434
+    model: mistral:7b-instruct-q4_K_M
+  token_tracking:
+    enabled: true
+logging:
+  cleanup:
+    enabled: true
+    file_patterns:
+    - '*.log'
+    - '*.log.*'
+    - '*.json'
+    - '*.json.*'
+    max_age_days: 30
+  console:
+    colored: true
+    enabled: true
+    level: INFO
+  date_format: '%Y-%m-%d %H:%M:%S'
+  error_log:
+    enabled: true
+    path: logs/selfy_production_errors.log
+  file:
+    backup_count: 5
+    enabled: true
+    level: DEBUG
+    max_size_mb: 10
+    path: logs/selfy_production.log
+  format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+  json:
+    enabled: true
+    path: logs/selfy_production_structured.json
+  levels:
+    selfy_core: INFO
+    selfy_core.global_modules: INFO
+    selfy_core.global_modules.llm_wrapper: INFO
+    selfy_core.global_modules.memory: INFO
+    selfy_core.user_pipeline.context_engine: INFO
+    selfy_core.user_pipeline.context_engine.context_builder: DEBUG
+    selfy_core.user_pipeline.context_engine.execution_planner: DEBUG
+    selfy_core.user_pipeline.context_engine.request_analyzer: DEBUG
+  root_level: INFO
+memory:
+  consolidation:
+    check_after_each_turn: false
+    consolidate_on_shutdown: true
+    enable: true
+    interval_seconds: 3600
+    session_inactive_threshold_seconds: 1800
+  embedding_service:
+    dimension: 384
+    model: all-MiniLM-L6-v2
+    provider: sentence_transformers
+    use_cache: true
+    use_gpu: true
+  evaluator:
+    enable: true
+    min_score_threshold: 0.6
+  lts:
+    chromadb:
+      collection_name: selfy_memory_production
+      path: ./memory_db_production
+    vector_db_type: chromadb
+  working_memory:
+    eviction_policy: LRU
+    max_size: 100
+paths:
+  capability_manifest: ./data/capability_manifest.json
+  data_dir: ./data
+pipeline:
+  input_handling:
+    history:
+      max_turns: 10
+    max_input_length: 2048
+  main:
+    max_conversation_age_seconds: 3600
+    max_history_size: 50
+  output_handling:
+    formatting:
+      default_format: text
+    validation:
+      enable_sanitization: true
+      max_length: 8192
+      min_length: 1

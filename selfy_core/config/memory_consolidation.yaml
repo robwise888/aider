@@ -1,0 +1,23 @@
+# Memory Consolidation Configuration
+
+memory:
+  # Enable intelligent filtering for long-term storage
+  use_intelligent_filtering: true
+  
+  # Memory evaluator settings
+  evaluator:
+    # Minimum score threshold for storing memories (0.0 to 1.0)
+    min_score_threshold: 0.6
+    # Enable memory evaluation
+    enable: true
+  
+  # Memory consolidation settings
+  consolidation:
+    # Enable memory consolidation
+    enable: true
+    # Interval between consolidation checks (in seconds)
+    interval_seconds: 3600  # 1 hour
+    # Threshold for considering a session inactive (in seconds)
+    session_inactive_threshold_seconds: 1800  # 30 minutes
+    # Check for consolidation after each turn
+    check_after_each_turn: false

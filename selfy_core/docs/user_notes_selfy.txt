@@ -1,0 +1,33 @@
+Usful scripts
+python launch_selfy.py 
+python reset_chromadb.py
+python clear_logs_py.py
+useful instructions to coder
+to inspect the code using str-replace-editor tool with the "view" command
+
+OpenHands
+http://localhost:3000
+.\run_openhands.bat  to run it 
+.\run_openhands_with_workspace.bat   when you want it to alter the selfy code base
+
+Launch settings window
+aider/aider_settings/settings_gui.py
+python -m aider.main
+
+closing
+docker stop openhands-app
+docker rm openhands-app
+
+launch aider(from  /aider)
+.\run_aider.bat --no-git
+
+the last agent says about launching
+C:\Users\rob\Documents\augment-projects\selfy\aider
+python -m aider.main
+This launches Aider using the Python module syntax, which ensures that Python can properly resolve all the module imports. The command was executed from the aider directory, which contains the aider package.
+This worked for it Can you try this ?
+
+Then later 
+If you want to launch it with specific parameters, you could add them to the command. For example:
+python -m aider.main --repo-dir C:\Users\rob\Documents\augment-projects\selfy\selfy_core --vector-enabled --vector-use-gpu --memory-max-usage-mb 2048
+This would launch Aider with the selfy_core directory as the repository, enable the vector database with GPU acceleration, and set the maximum memory usage to 2048 MB.
