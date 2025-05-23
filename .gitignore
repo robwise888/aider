@@ -1,18 +1,133 @@
+# IDE and Editor files
 .DS_Store
 .vscode/
 aider.code-workspace
-*.pyc
-.aider*
-aider_chat.egg-info/
-build
+*.swp
+*.swo
+.idea/
+.vs/
+*.sublime*
+.editorconfig
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Distribution / packaging
+build/
+develop-eggs/
 dist/
-Gemfile.lock
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+aider_chat.egg-info/
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+agent_env/
+agent_env_py312/
+agent_env_py313/
+
+# Aider specific files
+.aider*
+aider/__version__.py
+aider/_version.py
+.aider.tags.cache*/
+.aider.vector.db/
+.test_vector.db/
+.test.vector.db/
+memory_db/
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# Test files and directories
+test_*/
+tests/
+*_test.py
+test_*.py
+*_test.txt
+test_*.txt
+test_enhanced_repomap/
+test_knowledge/
+test_repo_map/
+test_retrieval/
+
+# Log files
+logs/
+*.log
+*.stderr.log
+*.stdout.log
+
+# Temporary files
+*.tmp
+*.bak
+temp/
+.temp/
+.#*
+tmp.benchmarks/
+
+# Environment variables
+.env
+.env.*
+
+# Documentation build
 _site
 .jekyll-cache/
 .jekyll-metadata
-aider/__version__.py
-aider/_version.py
-.venv/
-.#*
+Gemfile.lock
+
+# Git files
 .gitattributes
-tmp.benchmarks/
+
+# Benchmark files
+benchmark/results/
+
+# Docker files
+docker-compose.override.yml
+
+# Shell scripts (often used for local development)
+*.sh
+*.bat
+*.ps1
+
+# Local configuration files
+config.local.json
+config.local.yaml
+*.local.yml
+*.local.yaml
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*.ipynb
+
+# Coverage reports
+.coverage
+htmlcov/
+coverage.xml
+
+# Cache files
+.cache/
+.pytest_cache/
+
+# Backup files
+*~
+*.bak
+*.backup
